@@ -17,8 +17,9 @@ function StarRating({ rating }) {
 const name = 'chuka'
   return <div className="star-wrapper">
     {
-      [...Array(rating)].map((_, index)=> ( <img
+      [...Array(rating)].map((_index)=> ( <img
         alt=""
+        key={index}
         className="gold-star"
         src="https://sandpack-bundler.vercel.app/img/gold-star.svg"
       />))
